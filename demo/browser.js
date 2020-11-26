@@ -27,9 +27,8 @@ const userConfig = {
 }; // add any user configuration overrides
 
 const human = new Human(userConfig);
-console.log(human.config.backend);
-human.config.backend = "wasm";
-console.log(human.config.backend);
+userConfig.backend = "wasm";
+console.log(userConfig);
 
 // ui options
 const ui = {
