@@ -28,6 +28,8 @@ const userConfig = {
 
 const human = new Human(userConfig);
 console.log(human.config.backend);
+human.config.backend = "wasm";
+console.log(human.config.backend);
 
 // ui options
 const ui = {
