@@ -20,9 +20,9 @@ const userConfig = {
   },
   hand:{
     landmarks:false,
-    detector:{
+    /*detector:{
       modelPath:"https://tfhub.dev/mediapipe/tfjs-model/handdetector/1/default/1",
-    }
+    }*/
   }
 }; // add any user configuration overrides
 
