@@ -50,7 +50,7 @@ const ui = {
   fillPolygons: false,
   useDepth: false,
   console: true,
-  maxFPSframes: 10,
+  maxFPSframes: 25,
   modelsPreload: true,
   modelsWarmup: true,
   menuWidth: 0,
