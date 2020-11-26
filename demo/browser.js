@@ -4,7 +4,7 @@ import Menu from './menu.js';
 import GLBench from './gl-bench.js';
 
 const userConfig = {
-  backend:"wasm",
+  backend:"webgl",
   filter:{
     width:256,
     height:256,
@@ -27,6 +27,7 @@ const userConfig = {
 }; // add any user configuration overrides
 
 const human = new Human(userConfig);
+human.config.backend = "wasm";
 
 // ui options
 const ui = {
@@ -39,7 +40,7 @@ const ui = {
   columns: 2,
   busy: false,
   facing: true,
-  useWorker: false,
+  useWorker: true,
   worker: 'demo/worker.js',
   samples: ['../assets/sample6.jpg', '../assets/sample1.jpg', '../assets/sample4.jpg', '../assets/sample5.jpg', '../assets/sample3.jpg', '../assets/sample2.jpg'],
   compare: '../assets/sample-me.jpg',
